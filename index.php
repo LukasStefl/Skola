@@ -34,23 +34,23 @@
       
       $Honza = new Human("Honza", "Czech", "Male", "185cm", "67kg");
 */
-$cars = array (
-  array("Volvo",22,18),
-  array("BMW",15,13),
-  array("Saab",5,2),
-  array("Land Rover",17,15)
-);
-    
-for ($row = 0; $row < 4; $row++) {
-  echo "<p><b>Row number $row</b></p>";
-  echo "<ul>";
-  for ($col = 0; $col < 3; $col++) {
-    echo "<li>".$cars[$row][$col]."</li>";
-  }
-  echo "</ul>";
+
+class Author {
+  private $forename;
+  private $surname;
+  private $description;
 }
 
 
+class Book {
+  private $name;
+  private $description;
+  private $ISBN;
+  private $pagesCount;
+  $author = new Author;
+
+
+}
     ?>
 </body>
 </html>
