@@ -36,21 +36,37 @@
 */
 
 class Author {
-  private $forename;
-  private $surname;
-  private $description;
+  protected $forename;
+  protected $surname;
+  protected $description;
+  function __construct($forename, $surname, $description) {
+    $this->forname = $forename;
+    $this->surname = $surname;
+    $this->description = $description;
+  }
+  function get_forname() {
+    return $this->forename;
+  }
+  function get_surname() {
+    return $this->surname;
+  }
+  function get_description(){
+    return $this->description;
+  }
 }
+
 
 
 class Book {
-  private $name;
-  private $description;
-  private $ISBN;
-  private $pagesCount;
-  $author = new Author;
+  protected $name;
+  protected $description;
+  protected $ISBN;
+  protected $pagesCount;
+  //$author = new Author("Jan", "Jiří", "Je moc hodný");
 
 
 }
+ 
     ?>
 </body>
 </html>
