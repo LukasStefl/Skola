@@ -65,13 +65,12 @@ class Book {
   protected $description;
   protected $ISBN;
   protected $pagesCount;
-  //$author = new Author("Jan", "Jiří", "Je moc hodný");
   function __construct($name, $description, $ISBN, $pagesCount) {
     $this->name = $name;
     $this->description = $description;
     $this->ISBN = $ISBN;
     $this->pagesCount = $pagesCount;
-
+  }
     function get_name() {
       return $this->name;
     }
@@ -86,13 +85,14 @@ class Book {
     }
   }
 
-}
 $author = new Author("Alois", "Jirásek", "Spisovatel");
 echo $author->get_forname();
 echo "<br>";
 echo $author->get_surname();
 echo "<br>";
 echo $author->get_descriptionA();
+echo "<br>";
+echo "<br>";
 
 $book = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195");
 echo $book->get_name();
