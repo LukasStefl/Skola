@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -10,6 +12,7 @@
     <h1>Projekt</h1>
     <br>
     <?php
+    //php -S localhost:8080
 /*
 
     class Human {
@@ -36,22 +39,22 @@
 */
 
 class Author {
-  protected $forename;
-  protected $surname;
-  protected $description;
-  function __construct($forename, $surname, $description) {
-    $this->forname = $forename;
+  public $forname;
+  public $surname;
+  public $descriptionA;
+  function __construct($forname, $surname, $descriptionA) {
+    $this->forname = $forname;
     $this->surname = $surname;
-    $this->description = $description;
+    $this->descriptionA = $descriptionA;
   }
   function get_forname() {
-    return $this->forename;
+    return $this->forname;
   }
   function get_surname() {
     return $this->surname;
   }
-  function get_description(){
-    return $this->description;
+  function get_descriptionA(){
+    return $this->descriptionA;
   }
 }
 
@@ -63,10 +66,44 @@ class Book {
   protected $ISBN;
   protected $pagesCount;
   //$author = new Author("Jan", "Jiří", "Je moc hodný");
+  function __construct($name, $description, $ISBN, $pagesCount) {
+    $this->name = $name;
+    $this->description = $description;
+    $this->ISBN = $ISBN;
+    $this->pagesCount = $pagesCount;
 
+    function get_name() {
+      return $this->name;
+    }
+    function get_description() {
+      return $this->description;
+    }
+    function get_ISBN() {
+      return $this->ISBN;
+    }
+    function get_pagesCount() {
+      return $this->pagesCount;
+    }
+  }
 
 }
- 
+$author = new Author("Alois", "Jirásek", "Spisovatel");
+echo $author->get_forname();
+echo "<br>";
+echo $author->get_surname();
+echo "<br>";
+echo $author->get_descriptionA();
+
+$book = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195");
+echo $book->get_name();
+echo "<br>";
+echo $book->get_description();
+echo "<br>";
+echo $book->get_ISBN();
+echo "<br>";
+echo $book->get_pagesCount();
+echo "<br>";
+
     ?>
 </body>
 </html>
