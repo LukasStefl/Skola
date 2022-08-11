@@ -47,13 +47,13 @@ class Author {
     $this->surname = $surname;
     $this->descriptionA = $descriptionA;
   }
-  function get_forname() {
+  function getforname() {
     return $this->forname;
   }
-  function get_surname() {
+  function getsurname() {
     return $this->surname;
   }
-  function get_descriptionA(){
+  function getdescriptionA(){
     return $this->descriptionA;
   }
 }
@@ -71,37 +71,37 @@ class Book {
     $this->ISBN = $ISBN;
     $this->pagesCount = $pagesCount;
   }
-    function get_name() {
+    function getname() {
       return $this->name;
     }
-    function get_description() {
+    function getdescription() {
       return $this->description;
     }
-    function get_ISBN() {
+    function getISBN() {
       return $this->ISBN;
     }
-    function get_pagesCount() {
+    function getpagesCount() {
       return $this->pagesCount;
     }
   }
 
 $author = new Author("Alois", "Jirásek", "Spisovatel");
-echo $author->get_forname();
+echo $author->getforname();
 echo "<br>";
-echo $author->get_surname();
+echo $author->getsurname();
 echo "<br>";
-echo $author->get_descriptionA();
+echo $author->getdescriptionA();
 echo "<br>";
 echo "<br>";
 
 $book = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195");
-echo $book->get_name();
+echo $book->getname();
 echo "<br>";
-echo $book->get_description();
+echo $book->getdescription();
 echo "<br>";
-echo $book->get_ISBN();
+echo $book->getISBN();
 echo "<br>";
-echo $book->get_pagesCount();
+echo $book->getpagesCount();
 echo "<br>";
 
 
