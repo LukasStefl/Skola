@@ -106,7 +106,8 @@ echo $book->getPagesCount();
 echo "<br>";
 
 
-
+foreach (al)
+}
     ?>
     
 </body>
