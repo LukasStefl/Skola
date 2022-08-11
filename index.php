@@ -37,7 +37,7 @@
       
       $Honza = new Human("Honza", "Czech", "Male", "185cm", "67kg");
 */
-
+require 'vendor/autoload.php';
 class Author {
   public $forname;
   public $surname;
