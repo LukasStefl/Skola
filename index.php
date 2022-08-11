@@ -37,7 +37,7 @@
       
       $Honza = new Human("Honza", "Czech", "Male", "185cm", "67kg");
 */
-require 'vendor/autoload.php';
+//require 'vendor/autoload.php';
 class Author {
   public $forname;
   public $surname;
@@ -47,13 +47,13 @@ class Author {
     $this->surname = $surname;
     $this->descriptionA = $descriptionA;
   }
-  function getforname() {
+  function getForname() {
     return $this->forname;
   }
-  function getsurname() {
+  function getSurname() {
     return $this->surname;
   }
-  function getdescriptionA(){
+  function getDescriptionA(){
     return $this->descriptionA;
   }
 }
@@ -65,43 +65,44 @@ class Book {
   protected $description;
   protected $ISBN;
   protected $pagesCount;
+  protected $author;
   function __construct($name, $description, $ISBN, $pagesCount) {
     $this->name = $name;
     $this->description = $description;
     $this->ISBN = $ISBN;
     $this->pagesCount = $pagesCount;
   }
-    function getname() {
+    function getName() {
       return $this->name;
     }
-    function getdescription() {
+    function getDescription() {
       return $this->description;
     }
     function getISBN() {
       return $this->ISBN;
     }
-    function getpagesCount() {
+    function getPagesCount() {
       return $this->pagesCount;
     }
   }
 
 $author = new Author("Alois", "Jirásek", "Spisovatel");
-echo $author->getforname();
+echo $author->getForname();
 echo "<br>";
-echo $author->getsurname();
+echo $author->getSurname();
 echo "<br>";
-echo $author->getdescriptionA();
+echo $author->getDescriptionA();
 echo "<br>";
 echo "<br>";
 
 $book = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195");
-echo $book->getname();
+echo $book->getName();
 echo "<br>";
-echo $book->getdescription();
+echo $book->getDescription();
 echo "<br>";
 echo $book->getISBN();
 echo "<br>";
-echo $book->getpagesCount();
+echo $book->getPagesCount();
 echo "<br>";
 
 
