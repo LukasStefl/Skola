@@ -14,11 +14,12 @@
         protected $ISBN;
         protected $pagesCount;
         protected $author;
-        function __construct($name, $description, $ISBN, $pagesCount) {
+        function __construct($name, $description, $ISBN, $pagesCount, $author) {
           $this->name = $name;
           $this->description = $description;
           $this->ISBN = $ISBN;
           $this->pagesCount = $pagesCount;
+          $this->author = $author;
         }
           function getName() {
             return $this->name;
@@ -32,8 +33,11 @@
           function getPagesCount() {
             return $this->pagesCount;
           }
+          function getAuthor() {
+            return $this->author;
+          }
         }
-    $book = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195");
+    $book = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195", "František");
     echo $book->getName();
     echo "<br>";
     echo $book->getDescription();
@@ -42,6 +46,7 @@
     echo "<br>";
     echo $book->getPagesCount();
     echo "<br>";
+    echo $book->getAuthor();
     ?>
 
 </body>
