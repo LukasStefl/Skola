@@ -1,4 +1,6 @@
-
+<?php
+require 'vendor/autoload.php';
+?>
 
 <!DOCTYPE html>
 <html lang="cs">
@@ -15,8 +17,8 @@
     //php -S localhost:8080
 
 //require 'vendor/autoload.php';
-
-
+$authors = array();
+$books = array();
 
 
 ?>
