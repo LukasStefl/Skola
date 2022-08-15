@@ -32,7 +32,7 @@ echo "<br>";
 echo $authors->getDescriptionA();
 echo "<br>";
 echo "<br>";
-$books = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195", "František");
+$books = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195", "Alois Jirásek");
     echo $books->getName();
     echo "<br>";
     echo $books->getDescription();
