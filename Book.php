@@ -37,16 +37,6 @@
             return $this->author;
           }
         }
-    $book = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195", "František");
-    echo $book->getName();
-    echo "<br>";
-    echo $book->getDescription();
-    echo "<br>";
-    echo $book->getISBN();
-    echo "<br>";
-    echo $book->getPagesCount();
-    echo "<br>";
-    echo $book->getAuthor();
     ?>
 
 </body>

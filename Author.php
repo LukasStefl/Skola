@@ -27,14 +27,7 @@
           return $this->descriptionA;
         }
       }
-      $author = new Author("Alois", "Jirásek", "Spisovatel");
-echo $author->getForname();
-echo "<br>";
-echo $author->getSurname();
-echo "<br>";
-echo $author->getDescriptionA();
-echo "<br>";
-echo "<br>";
+
 
     
     ?>

@@ -1,5 +1,6 @@
 <?php
-require 'vendor/autoload.php';
+//require 'vendor/autoload.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -19,8 +20,8 @@ require 'vendor/autoload.php';
 //require 'vendor/autoload.php';
 $authors = array();
 $books = array();
-
-
+require_once('Author.php');
+require_once('Book.php');
 ?>
     
 </body>
