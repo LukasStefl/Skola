@@ -24,7 +24,24 @@ require_once('Author.php');
 echo "<br>";
 require_once('Book.php');
 
-
+$authors = new Author("Alois", "Jirásek", "Spisovatel");
+echo $authors->getForname();
+echo "<br>";
+echo $authors->getSurname();
+echo "<br>";
+echo $authors->getDescriptionA();
+echo "<br>";
+echo "<br>";
+$books = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195", "František");
+    echo $books->getName();
+    echo "<br>";
+    echo $books->getDescription();
+    echo "<br>";
+    echo $books->getISBN();
+    echo "<br>";
+    echo $books->getPagesCount();
+    echo "<br>";
+    echo $books->getAuthor();
 ?>
     
 </body>
