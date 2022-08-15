@@ -18,31 +18,30 @@
     //php -S localhost:8080
 
 //require 'vendor/autoload.php';
-$authors = array();
-$books = array();
+
 
 require_once('Author.php');
 echo "<br>";
 require_once('Book.php');
 
-$author = new Author("Alois", "Jirásek", "Spisovatel");
-echo $author->getForname();
+$authors = new Author("Alois", "Jirásek", "Spisovatel");
+echo $authors->getForname();
 echo "<br>";
-echo $author->getSurname();
+echo $authors->getSurname();
 echo "<br>";
-echo $author->getDescriptionA();
+echo $authors->getDescriptionA();
 echo "<br>";
 echo "<br>";
-$book = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195", "František");
-    echo $book->getName();
+$books = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195", "František");
+    echo $books->getName();
     echo "<br>";
-    echo $book->getDescription();
+    echo $books->getDescription();
     echo "<br>";
-    echo $book->getISBN();
+    echo $books->getISBN();
     echo "<br>";
-    echo $book->getPagesCount();
+    echo $books->getPagesCount();
     echo "<br>";
-    echo $book->getAuthor();
+    echo $books->getAuthor();
 ?>
     
 </body>
