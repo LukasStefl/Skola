@@ -22,6 +22,7 @@ $authors = array();
 $books = array();
 
 require_once('Author.php');
+echo "<br>";
 require_once('Book.php');
 
 $author = new Author("Alois", "Jirásek", "Spisovatel");
@@ -31,7 +32,7 @@ echo $author->getSurname();
 echo "<br>";
 echo $author->getDescriptionA();
 echo "<br>";
-
+echo "<br>";
 $book = new Book("Proti Všem", "Kniha", "978-80-907799-0-7", "195", "František");
     echo $book->getName();
     echo "<br>";
