@@ -41,3 +41,15 @@ JOIN book_author b_a ON b_a.book_id = b.id
 JOIN author a ON a.id = b_a.author_id
 JOIN genre g ON g.id = b.genre_id;
 
+INSERT INTO genre
+VALUES (1, thriller, 'ma vyvolat napeti u ctenare');
+INSERT INTO genre
+VALUES (2, povidka, 'kratky dej, postavy se nevyvijeji');
+
+
+INSERT INTO author
+VALUES (1, Alois Jirasek, 1851);
+INSERT INTO author
+VALUES (2, Karel	Čapek, 1890);
+INSERT INTO author
+VALUES (3, Jo	Nesbo, 1960);
