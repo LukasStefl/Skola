@@ -45,14 +45,30 @@ INSERT INTO genre
 VALUES (1, thriller, 'ma vyvolat napeti u ctenare');
 INSERT INTO genre
 VALUES (2, povidka, 'kratky dej, postavy se nevyvijeji');
+INSERT INTO genre
+VALUES (3, 'Roman', 'dlouhy dej, postavy se vyvijeji');
+INSERT INTO genre
+VALUES (3, 'Pohadka', 'ma stastny konec');
 
-
 INSERT INTO author
-VALUES (1, Alois Jirasek, 1851);
+VALUES (1, 'Alois', 'Jirasek', 1851);
 INSERT INTO author
-VALUES (2, Karel	Čapek, 1890);
+VALUES (2, 'Karel', 'Čapek', 1890);
 INSERT INTO author
-VALUES (3, Jo	Nesbo, 1960);
+VALUES (3, 'Jo', 'Nesbo', 1960);
+INSERT INTO author
+VALUES (4, 'Josef', 'Capek', 1887);
+INSERT INTO author
+VALUES (5, 'Tomas', 'Garrigue Masaryk', 1850);
 
 INSERT INTO book
-VALUES (1, Snehulak, 978-80-87497-45-6, 520, Zajimava Kniha, 1);
+VALUES (1, 'Snehulak', 978-80-87497-45-6, 520, 'Zajimava Kniha', 1);
+INSERT INTO book
+VALUES (2, 'Proti Vsem', 978-80-907799-0-7, 195, 'Zajimavy Roman', 3);
+INSERT INTO book
+VALUES (4, 'Povidky malostranske', 454-91-9014865-2-8, 500, 'Zajimava dlouha povidka', 2);
+
+INSERT INTO book
+VALUES (5, 'Povidky z jedne kapsy', 454-91-9014865-2-8, 400, 'Zajimava povidka', 2);
+INSERT INTO book
+VALUES (6, 'Povidky z druhe kapsy', 152-45-901586-4-2, 400, 'Zajimava druha povidka', 2);
