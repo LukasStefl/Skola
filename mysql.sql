@@ -53,3 +53,6 @@ INSERT INTO author
 VALUES (2, Karel	Čapek, 1890);
 INSERT INTO author
 VALUES (3, Jo	Nesbo, 1960);
+
+INSERT INTO book
+VALUES (1, Snehulak, 978-80-87497-45-6, 520, Zajimava Kniha, 1);
