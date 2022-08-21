@@ -48,7 +48,10 @@ VALUES (2, povidka, 'kratky dej, postavy se nevyvijeji');
 INSERT INTO genre
 VALUES (3, 'Roman', 'dlouhy dej, postavy se vyvijeji');
 INSERT INTO genre
-VALUES (3, 'Pohadka', 'ma stastny konec');
+VALUES (4, 'Pohadka', 'ma stastny konec');
+INSERT INTO genre
+VALUES (5, 'Filozofie', 'popis zivota a spolecnosti');
+
 
 INSERT INTO author
 VALUES (1, 'Alois', 'Jirasek', 1851);
@@ -72,3 +75,5 @@ INSERT INTO book
 VALUES (5, 'Povidky z jedne kapsy', 454-91-9014865-2-8, 400, 'Zajimava povidka', 2);
 INSERT INTO book
 VALUES (6, 'Povidky z druhe kapsy', 152-45-901586-4-2, 400, 'Zajimava druha povidka', 2);
+INSERT INTO book
+VALUES (7, 'Sebevrazda', 978-80-86495-13-2, 224, 'Filozoficka kniha', 5);
