@@ -1,4 +1,5 @@
 CREATE TABLE author (
+    id int NOT NULL AUTO_INCREMENT,
     forename varchar(255) NOT NULL,
     surname varchar(255) NOT NULL,
     birthdate int NOT NULL,
